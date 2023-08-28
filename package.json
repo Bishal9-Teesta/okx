@@ -4,7 +4,8 @@
   "description": "OKX Opportunity scanner",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js BTC"
+    "BTC": "node index.js BTC",
+    "ETH": "node index.js ETH"
   },
   "author": "Bishal Goon",
   "license": "ISC",

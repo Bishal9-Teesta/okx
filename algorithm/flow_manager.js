@@ -6,7 +6,7 @@ const future_best_price = require("./future_best_price")
 const moneyness = require("./moneyness")
 const opportunity_checker = require("./opportunity_checker")
 
-const opportunity_book_path = path.resolve(__dirname, "../Opportunity.csv")
+const opportunity_book_path = path.resolve(__dirname, `../Opportunity-${process.argv[2]}.csv`)
 
 const flow_manager = (option_symbol) => {
 

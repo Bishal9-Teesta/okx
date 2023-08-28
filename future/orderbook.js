@@ -120,7 +120,7 @@ const orderbook = () => {
         if (future_symbol) {
 
             // console.clear()
-            // console.log(global.FUTURE.book["BTC-USD-SWAP"])
+            // console.log(global.FUTURE.book[`${process.argv[2]}-USD-SWAP`])
 
             for (const option_symbol of Object.keys(global.OPTION.book)) {
 
