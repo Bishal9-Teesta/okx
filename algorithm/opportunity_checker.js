@@ -60,10 +60,10 @@ const opportunity_checker = (itm_symbol, future_array, itm_array, otm_array) => 
         // console.log("Conversion In Points: ", conversion_in_points)
         // console.log("Reversion In Points: ", reversion_in_points)
 
-        if (option_symbol_type === "C" && reversion_in_points < 30) {
+        if (option_symbol_type === "C" && reversion_in_points < Number(process.argv[3])) {
             should_continue = false;
             break;
-        } else if (option_symbol_type === "P" && conversion_in_points < 30) {
+        } else if (option_symbol_type === "P" && conversion_in_points < Number(process.argv[3])) {
             should_continue = false;
             break;
         }
